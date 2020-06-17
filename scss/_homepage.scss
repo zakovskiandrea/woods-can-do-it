@@ -1,0 +1,87 @@
+.section-services {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.8rem;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem;
+
+  &--1 {
+    position: relative;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url("../images/bckg-orange.png");
+    padding: 10rem;
+
+    h2 {
+      width: 40%;
+    }
+
+    p {
+      width: 40%;
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: -3.5rem;
+      height: auto;
+      width: 60%;
+    }
+  }
+
+  &--2 {
+    background-image: url("../images/bckg-blue.png");
+  }
+
+  &--3 {
+    background-image: url("../images/bckg-red.png");
+  }
+
+  &__heading {
+    line-height: 1;
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: #fff;
+    width: 80%;
+
+    &--orange {
+      color: #744210;
+    }
+  }
+}
+
+.section-about {
+  display: flex;
+}
+
+.about-card {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  background-color: #bee3f8;
+  padding: 10rem;
+
+  &__text {
+    color: #4a5568;
+    font-size: 2.6rem;
+  }
+}
+
+.slider-box {
+  flex: 1;
+}

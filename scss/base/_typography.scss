@@ -1,0 +1,42 @@
+body {
+  font-family: SF-regular;
+  padding: 1.7rem 0;
+}
+
+// HEADINGS
+
+.heading-2 {
+  font-family: SF-heavy;
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: #fff;
+
+  &--orange {
+    color: #c05621;
+  }
+
+  &--blue {
+    color: #2c5282;
+  }
+}
+
+.heading-6 {
+  font-size: 1.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  &--orange {
+    color: #7b341e;
+  }
+
+  &--blue {
+    color: #90cdf4;
+  }
+
+  &--red {
+    color: #fed7d7;
+  }
+  &--blue-dark {
+    color: #4a5568;
+  }
+}

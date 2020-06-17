@@ -1,0 +1,62 @@
+.header {
+  height: 10.5rem;
+  padding: 1rem 3rem;
+  background-color: #edf2f7;
+  border-radius: 20px;
+  display: flex;
+  margin-bottom: 2.4rem;
+
+  &__nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 6rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-family: SF-semibold;
+      letter-spacing: 0.085em;
+      color: #718096;
+    }
+
+    &:hover,
+    &:active {
+      color: #2d3748;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    &-text {
+      font-size: 1.6rem;
+      color: #718096;
+    }
+
+    &-number {
+      font-size: 1.8rem;
+      font-family: SF-heavy;
+      color: #2d3748;
+    }
+  }
+}

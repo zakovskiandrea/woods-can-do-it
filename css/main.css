@@ -1,0 +1,202 @@
+@font-face {
+  font-family: SF-regular;
+  src: url("../../fonts/SF-Pro-Display-Regular.otf"); }
+
+@font-face {
+  font-family: SF-light;
+  src: url("../../fonts/SF-Pro-Display-Light.otf"); }
+
+@font-face {
+  font-family: SF-medium;
+  src: url("../../fonts/SF-Pro-Display-Medium.otf"); }
+
+@font-face {
+  font-family: SF-heavy;
+  src: url("../../fonts/SF-Pro-Display-Heavy.otf"); }
+
+@font-face {
+  font-family: SF-semibold;
+  src: url("../../fonts/SF-Pro-Display-Semibold.otf"); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.btn {
+  border-radius: 50px;
+  padding: 2.1rem 6rem;
+  font-size: 2rem;
+  font-family: SF-light;
+  display: inline-block; }
+  .btn:link, .btn:visited {
+    text-decoration: none; }
+  .btn--orange {
+    color: #9c4221;
+    background-color: #feebc8; }
+  .btn--blue {
+    color: #2c5282;
+    background-color: #bee3f8; }
+  .btn--red {
+    color: #c53030;
+    background-color: #feb2b2; }
+
+body {
+  font-family: SF-regular;
+  padding: 1.7rem 0; }
+
+.heading-2 {
+  font-family: SF-heavy;
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: #fff; }
+  .heading-2--orange {
+    color: #c05621; }
+  .heading-2--blue {
+    color: #2c5282; }
+
+.heading-6 {
+  font-size: 1.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase; }
+  .heading-6--orange {
+    color: #7b341e; }
+  .heading-6--blue {
+    color: #90cdf4; }
+  .heading-6--red {
+    color: #fed7d7; }
+  .heading-6--blue-dark {
+    color: #4a5568; }
+
+.u-wrapper {
+  margin: 0 5.2%; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.mb-4 {
+  margin-bottom: 4rem; }
+
+.mb-6 {
+  margin-bottom: 6rem; }
+
+.mb-9 {
+  margin-bottom: 9rem; }
+
+.u-flex-end {
+  align-self: flex-end; }
+
+.u-mt-auto {
+  margin-top: auto; }
+
+.header {
+  height: 10.5rem;
+  padding: 1rem 3rem;
+  background-color: #edf2f7;
+  border-radius: 20px;
+  display: flex;
+  margin-bottom: 2.4rem; }
+  .header__nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .header__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none; }
+  .header__item:not(:last-child) {
+    margin-right: 6rem; }
+  .header__link:link, .header__link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: SF-semibold;
+    letter-spacing: 0.085em;
+    color: #718096; }
+  .header__link:hover, .header__link:active {
+    color: #2d3748; }
+  .header__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+    .header__contact-text {
+      font-size: 1.6rem;
+      color: #718096; }
+    .header__contact-number {
+      font-size: 1.8rem;
+      font-family: SF-heavy;
+      color: #2d3748; }
+
+.section-services {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.8rem; }
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem; }
+  .service-card--1 {
+    position: relative;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url("../images/bckg-orange.png");
+    padding: 10rem; }
+    .service-card--1 h2 {
+      width: 40%; }
+    .service-card--1 p {
+      width: 40%; }
+    .service-card--1 img {
+      position: absolute;
+      bottom: 0;
+      right: -3.5rem;
+      height: auto;
+      width: 60%; }
+  .service-card--2 {
+    background-image: url("../images/bckg-blue.png"); }
+  .service-card--3 {
+    background-image: url("../images/bckg-red.png"); }
+  .service-card__heading {
+    line-height: 1; }
+  .service-card__text {
+    font-size: 2rem;
+    color: #fff;
+    width: 80%; }
+    .service-card__text--orange {
+      color: #744210; }
+
+.section-about {
+  display: flex; }
+
+.about-card {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  background-color: #bee3f8;
+  padding: 10rem; }
+  .about-card__text {
+    color: #4a5568;
+    font-size: 2.6rem; }
+
+.slider-box {
+  flex: 1; }

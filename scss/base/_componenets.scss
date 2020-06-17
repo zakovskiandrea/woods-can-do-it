@@ -1,0 +1,27 @@
+.btn {
+  border-radius: 50px;
+  padding: 2.1rem 6rem;
+  font-size: 2rem;
+  font-family: SF-light;
+  display: inline-block;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &--orange {
+    color: #9c4221;
+    background-color: #feebc8;
+  }
+
+  &--blue {
+    color: #2c5282;
+    background-color: #bee3f8;
+  }
+
+  &--red {
+    color: #c53030;
+    background-color: #feb2b2;
+  }
+}

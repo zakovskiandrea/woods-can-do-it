@@ -1,0 +1,7 @@
+node_modules
+versions
+design
+*.zip
+*.rar
+package-lock.json
+.vscode
