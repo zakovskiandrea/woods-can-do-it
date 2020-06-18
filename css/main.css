@@ -91,6 +91,9 @@ body {
 .mb-9 {
   margin-bottom: 9rem; }
 
+.m-left {
+  margin-left: 5.2%; }
+
 .u-flex-end {
   align-self: flex-end; }
 
@@ -185,6 +188,26 @@ body {
 
 .section-about {
   display: flex; }
+  .section-about__slider-box {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .section-about__slider-box .slider-btns-wrapper {
+      display: flex;
+      margin-left: 4.5rem; }
+    .section-about__slider-box .slider-btn {
+      width: 7rem;
+      height: 7rem;
+      background-color: #e2e8f0;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      .section-about__slider-box .slider-btn:not(:last-child) {
+        margin-right: 1.5rem; }
 
 .about-card {
   flex: 0.4;
@@ -198,5 +221,17 @@ body {
     color: #4a5568;
     font-size: 2.6rem; }
 
-.slider-box {
-  flex: 1; }
+.slider-about {
+  height: 70%; }
+  .slider-about .slick-list {
+    height: 100%; }
+  .slider-about .slick-track {
+    height: 100%; }
+  .slider-about .slide {
+    height: 100%;
+    width: 50px;
+    margin-left: 4.5rem;
+    width: 43rem; }
+    .slider-about .slide img {
+      width: 100%;
+      object-fit: cover; }
