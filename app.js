@@ -17,3 +17,12 @@ $(document).ready(function () {
     nextArrow: ".teste__slider-box .slider-btn--next",
   });
 });
+
+$(document).ready(function () {
+  $(".slider-social").slick({
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    // autoplay: true,
+    speed: 2000,
+  });
+});

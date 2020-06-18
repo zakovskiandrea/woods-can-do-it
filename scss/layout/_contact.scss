@@ -1,0 +1,59 @@
+.section-contact {
+  padding: 14rem;
+  background-color: #2d3748;
+  border-radius: 20px;
+  display: flex;
+
+  &__left {
+    flex: 1;
+  }
+
+  &__right {
+    flex: 1;
+  }
+}
+
+.contact {
+  &__heading {
+  }
+
+  &__text {
+  }
+
+  &__form {
+  }
+}
+
+.form {
+  &__inputs-wrapper {
+  }
+
+  &__input-name {
+  }
+
+  &__input-date {
+  }
+
+  &__input-select {
+  }
+
+  &__inputs-email {
+  }
+
+  &__button {
+  }
+}
+
+.info {
+  &__list {
+  }
+  &__item {
+  }
+  &__buttons-wrapper {
+  }
+
+  &__facebook-btn {
+  }
+  &__insta-btn {
+  }
+}

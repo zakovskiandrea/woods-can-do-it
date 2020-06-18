@@ -67,7 +67,8 @@ body {
   font-family: SF-heavy;
   font-size: 7rem;
   text-transform: uppercase;
-  color: #fff; }
+  color: #fff;
+  line-height: 1; }
   .heading-2--orange {
     color: #c05621; }
   .heading-2--blue {
@@ -188,17 +189,17 @@ body {
     .teste__slider-box .slider-btn--next {
       right: 0; }
 
-.slider-testemonials {
-  height: 48rem; }
-  .slider-testemonials .slick-list {
-    height: 100%; }
-  .slider-testemonials .slick-track {
-    height: 100%; }
-  .slider-testemonials .slide {
-    height: 100%;
-    margin: 0 2.2rem;
-    background-color: #f7fafc;
-    border-radius: 20px; }
+.slider-testemonials .slick-list {
+  height: 100%; }
+
+.slider-testemonials .slick-track {
+  height: 100%; }
+
+.slider-testemonials .slide {
+  height: 100%;
+  margin: 0 2.2rem;
+  background-color: #f7fafc;
+  border-radius: 20px; }
 
 .slider-card {
   padding: 6.5rem; }
@@ -213,6 +214,16 @@ body {
     color: #a0aec0; }
   .slider-card__text {
     font-size: 2rem; }
+
+.section-contact {
+  padding: 14rem;
+  background-color: #2d3748;
+  border-radius: 20px;
+  display: flex; }
+  .section-contact__left {
+    flex: 1; }
+  .section-contact__right {
+    flex: 1; }
 
 .section-services {
   height: 100vh;
@@ -250,8 +261,6 @@ body {
     background-image: url("../images/bckg-blue.png"); }
   .service-card--3 {
     background-image: url("../images/bckg-red.png"); }
-  .service-card__heading {
-    line-height: 1; }
   .service-card__text {
     font-size: 2rem;
     color: #fff;
@@ -299,3 +308,56 @@ body {
     .slider-about .slide img {
       width: 100%;
       object-fit: cover; }
+
+.section-social__headings {
+  display: flex;
+  align-items: center; }
+
+.section-social__label {
+  margin-left: auto;
+  margin-right: 6%; }
+
+.slider-social .slick-list {
+  height: 100%; }
+
+.slider-social .slick-track {
+  height: 100%; }
+
+.social-card {
+  border: 1px solid #efedf0;
+  border-radius: 10px;
+  margin: 0 1rem; }
+  .social-card__image {
+    height: 20rem; }
+    .social-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .social-card__content {
+    padding: 2rem; }
+  .social-card__list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 2rem; }
+  .social-card__item {
+    font-size: 2rem;
+    color: #b3b2b2; }
+    .social-card__item:not(:first-child) {
+      list-style: disc;
+      margin-left: 3rem; }
+      .social-card__item:not(:first-child) span {
+        margin-left: -0.5rem; }
+  .social-card__text {
+    font-size: 2.8rem;
+    color: #000;
+    margin-bottom: 2rem; }
+  .social-card__facebook {
+    display: flex;
+    align-items: center; }
+  .social-card__link:link, .social-card__link:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #3b50bb;
+    margin-left: 1rem; }
+  .social-card__link:hover, .social-card__link:active {
+    text-decoration: underline; }
