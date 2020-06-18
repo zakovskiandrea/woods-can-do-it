@@ -1,0 +1,85 @@
+.section-testemonials {
+  display: flex;
+  flex-direction: column;
+  background-color: #edf2f7;
+  border-radius: 20px;
+  padding: 8.5rem;
+  align-items: center;
+}
+
+.teste {
+  &__label {
+  }
+
+  &__heading {
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: #a0aec0;
+    text-align: center;
+    width: 50%;
+  }
+
+  &__slider-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &--prev {
+        left: 0;
+      }
+
+      &--next {
+        right: 0;
+      }
+    }
+  }
+}
+
+.slider-testemonials {
+  height: 48rem;
+
+  .slick-list {
+    height: 100%;
+  }
+
+  .slick-track {
+    height: 100%;
+  }
+
+  .slide {
+    height: 100%;
+    margin: 0 2.2rem;
+    background-color: #f7fafc;
+    border-radius: 20px;
+  }
+}
+
+.slider-card {
+  padding: 6.5rem;
+
+  &__image {
+    width: 8rem;
+    margin-bottom: 2.5rem;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__heading {
+  }
+  &__customer-desc {
+    font-size: 1.8rem;
+    color: #a0aec0;
+  }
+  &__text {
+    font-size: 2rem;
+  }
+}

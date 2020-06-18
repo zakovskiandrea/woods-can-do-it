@@ -79,15 +79,6 @@
     }
 
     .slider-btn {
-      width: 7rem;
-      height: 7rem;
-      background-color: #e2e8f0;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-
       &:not(:last-child) {
         margin-right: 1.5rem;
       }

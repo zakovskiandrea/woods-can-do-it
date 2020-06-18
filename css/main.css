@@ -49,6 +49,16 @@ body {
     color: #c53030;
     background-color: #feb2b2; }
 
+.slider-btn {
+  width: 7rem;
+  height: 7rem;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+
 body {
   font-family: SF-regular;
   padding: 1.7rem 0; }
@@ -62,6 +72,13 @@ body {
     color: #c05621; }
   .heading-2--blue {
     color: #2c5282; }
+  .heading-2--blue-dark {
+    color: #4a5568; }
+
+.heading-4 {
+  font-family: SF-semibold;
+  font-size: 3.6rem;
+  color: #000; }
 
 .heading-6 {
   font-size: 1.6rem;
@@ -87,6 +104,9 @@ body {
 
 .mb-6 {
   margin-bottom: 6rem; }
+
+.mb-8 {
+  margin-bottom: 9rem; }
 
 .mb-9 {
   margin-bottom: 9rem; }
@@ -140,6 +160,59 @@ body {
       font-size: 1.8rem;
       font-family: SF-heavy;
       color: #2d3748; }
+
+.section-testemonials {
+  display: flex;
+  flex-direction: column;
+  background-color: #edf2f7;
+  border-radius: 20px;
+  padding: 8.5rem;
+  align-items: center; }
+
+.teste__text {
+  font-size: 2rem;
+  color: #a0aec0;
+  text-align: center;
+  width: 50%; }
+
+.teste__slider-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .teste__slider-box .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    .teste__slider-box .slider-btn--prev {
+      left: 0; }
+    .teste__slider-box .slider-btn--next {
+      right: 0; }
+
+.slider-testemonials {
+  height: 48rem; }
+  .slider-testemonials .slick-list {
+    height: 100%; }
+  .slider-testemonials .slick-track {
+    height: 100%; }
+  .slider-testemonials .slide {
+    height: 100%;
+    margin: 0 2.2rem;
+    background-color: #f7fafc;
+    border-radius: 20px; }
+
+.slider-card {
+  padding: 6.5rem; }
+  .slider-card__image {
+    width: 8rem;
+    margin-bottom: 2.5rem; }
+    .slider-card__image img {
+      width: 100%;
+      object-fit: cover; }
+  .slider-card__customer-desc {
+    font-size: 1.8rem;
+    color: #a0aec0; }
+  .slider-card__text {
+    font-size: 2rem; }
 
 .section-services {
   height: 100vh;
@@ -197,17 +270,8 @@ body {
     .section-about__slider-box .slider-btns-wrapper {
       display: flex;
       margin-left: 4.5rem; }
-    .section-about__slider-box .slider-btn {
-      width: 7rem;
-      height: 7rem;
-      background-color: #e2e8f0;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer; }
-      .section-about__slider-box .slider-btn:not(:last-child) {
-        margin-right: 1.5rem; }
+    .section-about__slider-box .slider-btn:not(:last-child) {
+      margin-right: 1.5rem; }
 
 .about-card {
   flex: 0.4;

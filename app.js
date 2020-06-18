@@ -3,7 +3,17 @@ $(document).ready(function () {
     slidesToShow: 2,
     slidesToScroll: 1,
     variableWidth: true,
-    prevArrow: ".slider-btn--prev",
-    nextArrow: ".slider-btn--next",
+    prevArrow: ".section-about__slider-box .slider-btn--prev",
+    nextArrow: ".section-about__slider-box .slider-btn--next",
+  });
+});
+
+$(document).ready(function () {
+  $(".slider-testemonials").slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    speed: 1000,
+    prevArrow: ".teste__slider-box .slider-btn--prev",
+    nextArrow: ".teste__slider-box .slider-btn--next",
   });
 });
