@@ -1,0 +1,27 @@
+.footer {
+  height: 13rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    font-size: 1.8rem;
+    color: #a0aec0;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    font-size: 1.5rem;
+    color: #718096;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-left: 7rem;
+    }
+  }
+}

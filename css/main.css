@@ -162,6 +162,25 @@ body {
       font-family: SF-heavy;
       color: #2d3748; }
 
+.footer {
+  height: 13rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer__text {
+    font-size: 1.8rem;
+    color: #a0aec0; }
+  .footer__list {
+    list-style: none;
+    display: flex; }
+  .footer__item {
+    font-size: 1.5rem;
+    color: #718096;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .footer__item:not(:first-child) {
+      margin-left: 7rem; }
+
 .section-testemonials {
   display: flex;
   flex-direction: column;
@@ -389,6 +408,25 @@ body {
     margin-bottom: 2.5rem; }
   .info__btn img {
     margin-right: 1.5rem; }
+
+.footer {
+  height: 13rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer__text {
+    font-size: 1.8rem;
+    color: #a0aec0; }
+  .footer__list {
+    list-style: none;
+    display: flex; }
+  .footer__item {
+    font-size: 1.5rem;
+    color: #718096;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .footer__item:not(:first-child) {
+      margin-left: 7rem; }
 
 .section-services {
   height: 100vh;
