@@ -22,7 +22,7 @@ $(document).ready(function () {
   $(".slider-social").slick({
     slidesToShow: 4,
     slidesToScroll: 2,
-    // autoplay: true,
+    autoplay: true,
     speed: 2000,
   });
 });

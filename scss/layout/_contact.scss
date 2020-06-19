@@ -3,57 +3,231 @@
   background-color: #2d3748;
   border-radius: 20px;
   display: flex;
+  justify-content: space-between;
 
   &__left {
-    flex: 1;
+    flex: 0.6;
+    margin-right: 10%;
   }
 
   &__right {
-    flex: 1;
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
 .contact {
   &__heading {
+    margin-bottom: 5rem;
   }
 
   &__text {
+    font-size: 2.6rem;
+    color: #4a5568;
+    margin-bottom: 7.5rem;
   }
 
   &__form {
+    label {
+      font-size: 1.8rem;
+      color: #718096;
+      margin-bottom: 2rem;
+    }
   }
 }
 
 .form {
   &__inputs-wrapper {
+    display: flex;
+  }
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    &--name {
+      flex: 0.65;
+      margin-right: 2rem;
+    }
+
+    &--date {
+      flex: 0.35;
+    }
+
+    &--select {
+      flex: 1;
+      margin-right: 2rem;
+      position: relative;
+
+      &:after {
+        background-image: url("../../images/arrow-down.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 3.5rem;
+        width: 3.5rem;
+        background-color: #718096;
+        border-radius: 10px;
+        content: "";
+        position: absolute;
+        top: 5.4rem;
+        right: 1rem;
+        color: #434b67;
+        pointer-events: none;
+      }
+    }
+
+    &--email {
+      flex: 1;
+    }
   }
 
   &__input-name {
+    border: none;
+    border-radius: 3px;
+    background-color: #4a5568;
+    font-size: 1.8rem;
+    padding: 0 2rem;
+    color: #718096;
+    height: 6rem;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__input-date {
+    border: none;
+    border-radius: 3px;
+    background-color: #4a5568;
+    font-size: 2.5rem;
+    padding: 0 2rem;
+    color: #718096;
+    position: relative;
+    height: 6rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-calendar-picker-indicator {
+      opacity: 1;
+      display: block;
+      background-image: url("../../images/calendar.svg");
+      width: 2.2rem;
+      height: 2.2rem;
+      position: absolute;
+      left: 0;
+    }
+
+    &::-webkit-datetime-edit-fields-wrapper {
+      margin-left: 5rem;
+    }
   }
 
   &__input-select {
+    border: none;
+    border-radius: 3px;
+    background-color: #4a5568;
+    font-size: 1.8rem;
+    padding: 0 2rem;
+    color: #718096;
+    position: relative;
+    height: 6rem;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 
-  &__inputs-email {
+  &__input-email {
+    border: none;
+    border-radius: 3px;
+    background-color: #4a5568;
+    font-size: 1.8rem;
+    padding: 0 2rem;
+    color: #718096;
+    height: 6rem;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__button {
+    background-color: #63b3ed;
+    font-size: 2rem;
+    letter-spacing: 0.175em;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    height: 6rem;
+    width: 100%;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
 .info {
   &__list {
+    list-style: none;
   }
   &__item {
+    font-size: 2.4rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    div {
+      height: 4.8rem;
+      width: 4.8rem;
+      border-radius: 50%;
+      background-color: rgba(75, 135, 237, 0.06);
+      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 2.5rem;
+    }
   }
   &__buttons-wrapper {
+    align-self: flex-start;
   }
 
-  &__facebook-btn {
-  }
-  &__insta-btn {
+  &__btn {
+    padding: 1.5rem;
+    background-color: #1a202c;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+
+    img {
+      margin-right: 1.5rem;
+    }
   }
 }

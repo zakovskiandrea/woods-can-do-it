@@ -265,29 +265,52 @@
             <p class="contact__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             <form class="contact__form">
                 <div class="form__inputs-wrapper">
-                    <input class="form__input-name" type="text">
-                    <input class="form__input-date" type="date">
+                    <div class="form__input-box form__input-box--name">
+                        <label for="name">Name</label>
+                        <input id="name" class="form__input-name" type="text" autocomplete="off">
+                    </div>
+                    <div class="form__input-box form__input-box--date">
+                        <label for="date">Date</label>
+                        <input id="date" class="form__input-date" type="date">
+                    </div>
                 </div>
                 <div class="form__inputs-wrapper">
-                    <select class="form__input-select">
-                        <option>1</option>
-                        <option>2</option>
-                    </select>
-                    <input class="form__input-email" type="email">
+                    <div class="form__input-box form__input-box--select">
+                        <label>Service</label>
+                        <select class="form__input-select" aria-placeholder="test">
+                            <option value="" disabled selected>Choose Your Service</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="form__input-box form__input-box--email">
+                        <label>Email</label>
+                        <input class="form__input-email" type="email">
+                    </div>
                 </div>
                 <button class="form__button">Send</button>
             </form>
         </div>
         <div class="section-contact__right info">
             <ul class="info__list">
-                <li class="info__item"><img /> Kenosha, WI</li>
-                <li class="info__item"><img /> woodscandoit@gmail.com</li>
-                <li class="info__item"><img /> 262-945-2443</li>
-                <li class="info__item"><img /> 773-892-2473</li>
+                <li class="info__item">
+                    <div><img src="../images/location.svg" alt="location-icon" /></div> Kenosha, WI
+                </li>
+                <li class="info__item">
+                    <div><img src="../images/mail.svg" alt="location-icon" /></div>woodscandoit@gmail.com
+                </li>
+                <li class="info__item">
+                    <div><img src="../images/phone.svg" alt="location-icon" /></div>262-945-2443
+                </li>
+                <li class="info__item">
+                    <div><img src="../images/phone.svg" alt="location-icon" /></div>773-892-2473
+                </li>
             </ul>
             <div class="info__buttons-wrapper">
-                <div class="info__facebook-btn"><img />Follow Us On Facebook</div>
-                <div class="info__insta-btn"><img />Follow Us On Instagram</div>
+                <div class="info__btn info__btn--fb"><img src="../images/facebook.svg" alt="fb-icon" />Follow Us On
+                    Facebook</div>
+                <div class="info__btn info__btn--insta"><img src="../images/instagram.svg" alt="insta-icon" />Follow Us
+                    On Instagram</div>
             </div>
         </div>
     </section>
