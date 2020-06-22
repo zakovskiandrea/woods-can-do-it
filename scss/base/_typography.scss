@@ -12,6 +12,10 @@ body {
   color: #fff;
   line-height: 1;
 
+  @include for-desktop-xxl {
+    font-size: 6rem;
+  }
+
   &--orange {
     color: #c05621;
   }
@@ -22,6 +26,10 @@ body {
 
   &--blue-dark {
     color: #4a5568;
+  }
+
+  &--black {
+    color: #000;
   }
 }
 

@@ -61,6 +61,17 @@
 
 .slider-card {
   padding: 6.5rem;
+  @include for-desktop-xl {
+    padding: 4rem;
+  }
+
+  @include for-desktop {
+    padding: 3rem;
+  }
+
+  @include for-laptop {
+    padding: 2rem;
+  }
 
   &__image {
     width: 8rem;

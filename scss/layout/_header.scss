@@ -5,6 +5,7 @@
   border-radius: 20px;
   display: flex;
   margin-bottom: 2.4rem;
+  position: relative;
 
   &__nav {
     flex: 1;
@@ -39,6 +40,15 @@
     &:hover,
     &:active {
       color: #2d3748;
+    }
+
+    &--active {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: #ffb74b;
+      }
     }
   }
 

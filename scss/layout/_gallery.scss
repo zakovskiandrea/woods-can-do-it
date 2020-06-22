@@ -1,0 +1,28 @@
+.section-gallery {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+  }
+
+  &__slider-box {
+  }
+
+  &__heading {
+  }
+
+  &__slider-btns {
+    display: flex;
+    margin-right: 10rem;
+
+    .slider-btn--prev {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.slider-gallery {
+  .slide {
+    margin: 0 2rem;
+  }
+}

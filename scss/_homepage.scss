@@ -1,5 +1,4 @@
 .section-services {
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -23,6 +22,16 @@
     background-image: url("../images/bckg-orange.png");
     padding: 10rem;
 
+    @include for-desktop-xl {
+      padding: 8rem;
+    }
+
+    h6 {
+      @include for-desktop-xl {
+        margin-bottom: 5rem;
+      }
+    }
+
     h2 {
       width: 40%;
     }
@@ -42,10 +51,16 @@
 
   &--2 {
     background-image: url("../images/bckg-blue.png");
+    .service-card__text {
+      margin-bottom: 7rem;
+    }
   }
 
   &--3 {
     background-image: url("../images/bckg-red.png");
+    .service-card__text {
+      margin-bottom: 7rem;
+    }
   }
 
   &__heading {
@@ -94,6 +109,10 @@
   background-color: #bee3f8;
   padding: 10rem;
 
+  @include for-desktop-xl {
+    padding: 8rem;
+  }
+
   &__text {
     color: #4a5568;
     font-size: 2.6rem;
@@ -124,6 +143,7 @@
 }
 
 .section-social {
+  overflow: hidden;
   &__headings {
     display: flex;
     align-items: center;

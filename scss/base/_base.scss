@@ -33,6 +33,21 @@
 
 html {
   font-size: 62.5%;
+  @include for-desktop-xxl {
+    font-size: 58%;
+  }
+
+  @include for-desktop-xl {
+    font-size: 55%;
+  }
+
+  @include for-desktop {
+    font-size: 52%;
+  }
+
+  @include for-laptop {
+    font-size: 50%;
+  }
 }
 
 body {

@@ -5,9 +5,17 @@
   display: flex;
   justify-content: space-between;
 
+  @include for-desktop {
+    padding: 10rem;
+  }
+
   &__left {
     flex: 0.6;
     margin-right: 10%;
+
+    @include for-desktop {
+      margin-right: 0;
+    }
   }
 
   &__right {

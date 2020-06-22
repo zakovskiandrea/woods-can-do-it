@@ -1,0 +1,90 @@
+.section-main {
+  margin-top: -15rem;
+
+  &__content {
+    padding-left: 22rem;
+    padding-bottom: 11rem;
+
+    &--orange {
+      padding-top: 20rem;
+      background-image: url("../../images/main-bckg-orange.png");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  &__description {
+    padding: 6rem 0;
+    padding-left: 22rem;
+    position: relative;
+  }
+}
+
+.content {
+  &__label {
+    margin-bottom: 5rem;
+  }
+
+  &__heading {
+    width: 45%;
+    margin-bottom: 4rem;
+    span {
+      color: #000;
+    }
+  }
+
+  &__text {
+    width: 45%;
+    color: #fff;
+    font-size: 2.4rem;
+  }
+}
+
+.description {
+  &__image {
+    position: absolute;
+    bottom: 14rem;
+    right: 10rem;
+    width: 35%;
+    pointer-events: none;
+
+    @include for-desktop-xl {
+      bottom: 22rem;
+    }
+
+    @include for-desktop {
+      bottom: 30rem;
+    }
+  }
+  &__text {
+    width: 45%;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #feb850;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+
+    &__circle {
+      background-color: #fff5e6;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+
+      img {
+        height: auto;
+        width: 50%;
+      }
+    }
+  }
+}
