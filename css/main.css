@@ -94,6 +94,8 @@ body {
     color: #3b89ca; }
   .heading-2--blue-dark {
     color: #4a5568; }
+  .heading-2--red {
+    color: #ee4343; }
   .heading-2--black {
     color: #000; }
 
@@ -485,6 +487,8 @@ body {
       background-image: url("../../images/main-bckg-orange.png"); }
     .section-main__content--blue {
       background-image: url("../../images/main-bckg-blue.png"); }
+    .section-main__content--red {
+      background-image: url("../../images/main-bckg-red.png"); }
   .section-main__description {
     padding: 6rem 0;
     padding-left: 22rem;
