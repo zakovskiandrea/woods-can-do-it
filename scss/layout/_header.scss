@@ -7,6 +7,10 @@
   margin-bottom: 2.4rem;
   position: relative;
 
+  &--white {
+    background-color: #fff;
+  }
+
   &__nav {
     flex: 1;
     display: flex;
@@ -42,12 +46,30 @@
       color: #2d3748;
     }
 
-    &--active {
+    &--active-orange {
       &:link,
       &:visited,
       &:hover,
       &:active {
         color: #ffb74b;
+      }
+    }
+
+    &--active-blue {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: #2c5282;
+      }
+    }
+
+    &--active-red {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: #ff9696;
       }
     }
   }

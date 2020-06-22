@@ -4,12 +4,16 @@
   &__content {
     padding-left: 22rem;
     padding-bottom: 11rem;
+    padding-top: 20rem;
+    background-position: center;
+    background-size: cover;
 
     &--orange {
-      padding-top: 20rem;
       background-image: url("../../images/main-bckg-orange.png");
-      background-position: center;
-      background-size: cover;
+    }
+
+    &--blue {
+      background-image: url("../../images/main-bckg-blue.png");
     }
   }
 
@@ -29,7 +33,7 @@
     width: 45%;
     margin-bottom: 4rem;
     span {
-      color: #000;
+      color: rgba(0, 0, 0, 0.7);
     }
   }
 
@@ -66,13 +70,25 @@
     display: inline-flex;
     align-items: center;
     font-size: 2rem;
-    background-color: #feb850;
     border-radius: 10px;
     padding: 1rem 2rem;
     cursor: pointer;
 
+    &--orange {
+      background-color: #feb850;
+    }
+
+    &--blue {
+      background-color: #edf2f7;
+      color: #2c5282;
+    }
+
+    &--red {
+      background-color: #ee4343;
+      color: #fff;
+    }
+
     &__circle {
-      background-color: #fff5e6;
       width: 5rem;
       height: 5rem;
       border-radius: 50%;
@@ -80,6 +96,18 @@
       justify-content: center;
       align-items: center;
       margin-right: 1rem;
+
+      &--orange {
+        background-color: #fff5e6;
+      }
+
+      &--blue {
+        background-color: #f5faff;
+      }
+
+      &--red {
+        background-color: #fbf9f9;
+      }
 
       img {
         height: auto;
