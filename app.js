@@ -36,3 +36,19 @@ $(document).ready(function () {
     nextArrow: ".section-gallery__slider-btns .slider-btn--next",
   });
 });
+
+$(document).ready(function () {
+  $(".header-phone__dropbtn").click(() => {
+    $(".header-phone__dropdown-content").toggleClass("show");
+  });
+});
+
+$(document).ready(function () {
+  $(document).click(function () {
+    $(".header-phone__dropdown-content").removeClass("show");
+  });
+
+  $(".header-phone__dropdown").click(function (e) {
+    e.stopPropagation();
+  });
+});

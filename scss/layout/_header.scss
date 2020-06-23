@@ -7,6 +7,10 @@
   margin-bottom: 2.4rem;
   position: relative;
 
+  @include for-laptop {
+    display: none;
+  }
+
   &--white {
     background-color: #fff;
   }
@@ -27,6 +31,10 @@
   &__item {
     &:not(:last-child) {
       margin-right: 6rem;
+
+      @include for-desktop {
+        margin-right: 2rem;
+      }
     }
   }
 
@@ -99,5 +107,57 @@
       font-family: SF-heavy;
       color: #2d3748;
     }
+  }
+}
+
+.header-phone {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  @include for-laptop {
+    display: flex;
+  }
+
+  &__dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__dropbtn {
+    cursor: pointer;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 16rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .header__list {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  .header__item {
+    padding: 1rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #718096af;
+    }
+  }
+
+  .show {
+    display: block;
   }
 }
