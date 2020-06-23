@@ -1,15 +1,37 @@
 .section-about-us {
   display: flex;
   padding: 10rem 0;
+
+  @include for-laptop {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+  @include for-phone {
+    margin-bottom: 0;
+  }
   &__content {
     flex: 1;
     padding: 0 10rem;
+    @include for-laptop {
+      flex-direction: column;
+      padding: 0 5rem;
+    }
+
+    @include for-phone {
+      padding: 0;
+    }
   }
   &__label {
     margin-bottom: 7rem;
+    @include for-tablet {
+      margin-bottom: 4rem;
+    }
   }
   &__heading {
     margin-bottom: 7rem;
+    @include for-tablet {
+      margin-bottom: 4rem;
+    }
     span {
       color: #63b3ed;
     }

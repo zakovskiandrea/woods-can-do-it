@@ -3,17 +3,27 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 7rem;
+    @include for-phone {
+      margin-bottom: 3rem;
+    }
   }
 
   &__slider-box {
   }
 
   &__heading {
+    @include for-phone {
+      font-size: 5rem;
+    }
   }
 
   &__slider-btns {
     display: flex;
     margin-right: 10rem;
+
+    @include for-tablet {
+      display: none;
+    }
 
     .slider-btn--prev {
       margin-right: 2rem;
@@ -24,5 +34,16 @@
 .slider-gallery {
   .slide {
     margin: 0 2rem;
+
+    @include for-phone {
+      width: 40rem;
+      height: 40rem;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }

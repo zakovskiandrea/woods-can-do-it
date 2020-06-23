@@ -8,6 +8,11 @@
   @include for-desktop {
     padding: 10rem;
   }
+  @include for-phone {
+    margin: 0;
+    padding: 5rem;
+    border-radius: 0;
+  }
 
   &__left {
     flex: 0.6;
@@ -16,6 +21,9 @@
     @include for-desktop {
       margin-right: 0;
     }
+    @include for-laptop {
+      flex: 1;
+    }
   }
 
   &__right {
@@ -23,6 +31,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include for-laptop {
+      display: none;
+    }
   }
 }
 
@@ -42,6 +54,9 @@
       font-size: 1.8rem;
       color: #718096;
       margin-bottom: 2rem;
+      @include for-phone {
+        margin-bottom: 1rem;
+      }
     }
   }
 }
@@ -49,6 +64,9 @@
 .form {
   &__inputs-wrapper {
     display: flex;
+    @include for-laptop {
+      flex-direction: column;
+    }
   }
   &__input-box {
     display: flex;
@@ -56,21 +74,37 @@
 
     &:not(:last-child) {
       margin-bottom: 3rem;
+      @include for-laptop {
+        margin-bottom: 0;
+      }
+
+      @include for-laptop {
+        margin-bottom: 4rem;
+      }
     }
 
     &--name {
       flex: 0.65;
       margin-right: 2rem;
+      @include for-laptop {
+        margin-right: 0;
+      }
     }
 
     &--date {
       flex: 0.35;
+      @include for-laptop {
+        margin-bottom: 4rem;
+      }
     }
 
     &--select {
       flex: 1;
       margin-right: 2rem;
       position: relative;
+      @include for-laptop {
+        margin-right: 0;
+      }
 
       &:after {
         background-image: url("../../images/arrow-down.svg");
@@ -86,11 +120,18 @@
         right: 1rem;
         color: #434b67;
         pointer-events: none;
+
+        @include for-phone {
+          top: 4.4rem;
+        }
       }
     }
 
     &--email {
       flex: 1;
+      @include for-laptop {
+        margin-bottom: 4rem;
+      }
     }
   }
 

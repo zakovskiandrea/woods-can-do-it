@@ -4,23 +4,54 @@
   justify-content: space-between;
   align-items: center;
 
+  @include for-tablet {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  @include for-phone {
+    align-items: flex-start;
+    height: unset;
+    margin-top: 0;
+  }
+
   &__text {
     font-size: 1.8rem;
     color: #a0aec0;
+    @include for-tablet {
+      margin-top: 4rem;
+    }
+
+    @include for-phone {
+      align-self: center;
+    }
   }
 
   &__list {
     list-style: none;
     display: flex;
+    @include for-phone {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
   }
 
   &__item {
     font-size: 1.5rem;
     text-transform: uppercase;
     cursor: pointer;
-
+    @include for-phone {
+      margin-top: 6rem;
+      margin-left: 0;
+      font-size: 2.5rem;
+    }
     &:not(:first-child) {
       margin-left: 7rem;
+      @include for-phone {
+        margin-left: 0;
+      }
     }
   }
 

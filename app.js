@@ -10,8 +10,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".slider-testemonials").slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: window.innerWidth > 991 ? 3 : window.innerWidth > 575 ? 2 : 1,
+    slidesToScroll:
+      window.innerWidth > 991 ? 3 : window.innerWidth > 575 ? 2 : 1,
     speed: 1000,
     prevArrow: ".teste__slider-box .slider-btn--prev",
     nextArrow: ".teste__slider-box .slider-btn--next",
@@ -20,7 +21,14 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".slider-social").slick({
-    slidesToShow: window.innerWidth > 1199 ? 4 : 3,
+    slidesToShow:
+      window.innerWidth > 1199
+        ? 4
+        : window.innerWidth > 991
+        ? 3
+        : window.innerWidth > 575
+        ? 2
+        : 1,
     slidesToScroll: 2,
     autoplay: true,
     speed: 2000,
@@ -29,7 +37,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".slider-gallery").slick({
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
     prevArrow: ".section-gallery__slider-btns .slider-btn--prev",

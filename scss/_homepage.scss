@@ -1,8 +1,11 @@
 .section-services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-gap: 1.8rem;
+
+  @include for-laptop {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service-card {
@@ -26,18 +29,30 @@
       padding: 8rem;
     }
 
+    @include for-laptop {
+      grid-column: 1 / 2;
+      grid-row: 1 /2;
+      padding: 5rem;
+    }
+
     h6 {
       @include for-desktop-xl {
         margin-bottom: 5rem;
       }
+
+      @include for-laptop {
+        margin-bottom: 0;
+        margin-left: auto;
+      }
     }
 
-    h2 {
-      width: 40%;
-    }
-
+    h2,
     p {
       width: 40%;
+
+      @include for-laptop {
+        width: 70%;
+      }
     }
 
     img {
@@ -46,6 +61,10 @@
       right: -3.5rem;
       height: auto;
       width: 60%;
+
+      @include for-laptop {
+        display: none;
+      }
     }
   }
 
@@ -53,6 +72,16 @@
     background-image: url("../images/bckg-blue.png");
     .service-card__text {
       margin-bottom: 7rem;
+      @include for-laptop {
+        margin-bottom: 5rem;
+      }
+    }
+
+    @include for-laptop {
+      h2,
+      p {
+        width: 70%;
+      }
     }
   }
 
@@ -60,6 +89,16 @@
     background-image: url("../images/bckg-red.png");
     .service-card__text {
       margin-bottom: 7rem;
+      @include for-laptop {
+        margin-bottom: 5rem;
+      }
+    }
+
+    @include for-laptop {
+      h2,
+      p {
+        width: 70%;
+      }
     }
   }
 
@@ -79,6 +118,12 @@
 
 .section-about {
   display: flex;
+  margin-right: 5.2%;
+
+  @include for-laptop {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 
   &__slider-box {
     flex: 1;
@@ -90,6 +135,10 @@
     .slider-btns-wrapper {
       display: flex;
       margin-left: 4.5rem;
+
+      @include for-laptop {
+        display: none;
+      }
     }
 
     .slider-btn {
@@ -113,9 +162,26 @@
     padding: 8rem;
   }
 
+  @include for-laptop {
+    margin-bottom: 3rem;
+    padding: 5rem;
+
+    &__label {
+      margin-bottom: 0;
+      margin-left: auto;
+    }
+
+    &__heading {
+      width: 70%;
+    }
+  }
+
   &__text {
     color: #4a5568;
     font-size: 2.6rem;
+    @include for-laptop {
+      width: 70%;
+    }
   }
 }
 
@@ -127,7 +193,7 @@
   }
 
   .slick-track {
-    height: 100%;
+    height: 40rem;
   }
   .slide {
     height: 100%;
@@ -135,8 +201,13 @@
     margin-left: 4.5rem;
     width: 43rem;
 
+    @include for-laptop {
+      margin-left: 2rem;
+    }
+
     img {
       width: 100%;
+      height: 100%;
       object-fit: cover;
     }
   }
@@ -147,6 +218,9 @@
   &__headings {
     display: flex;
     align-items: center;
+    @include for-laptop {
+      margin-bottom: 4rem;
+    }
   }
 
   &__heading {

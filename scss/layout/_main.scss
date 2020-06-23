@@ -8,6 +8,15 @@
     background-position: center;
     background-size: cover;
 
+    @include for-laptop {
+      padding-left: 5.2%;
+      padding-right: 5.2%;
+    }
+
+    @include for-phone {
+      padding-bottom: 5rem;
+    }
+
     &--orange {
       background-image: url("../../images/main-bckg-orange.png");
     }
@@ -25,6 +34,14 @@
     padding: 6rem 0;
     padding-left: 22rem;
     position: relative;
+    @include for-laptop {
+      padding-left: 5.2%;
+      padding-right: 5.2%;
+    }
+
+    @include for-laptop {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -39,12 +56,18 @@
     span {
       color: rgba(0, 0, 0, 0.7);
     }
+    @include for-laptop {
+      width: 100%;
+    }
   }
 
   &__text {
     width: 45%;
     color: #fff;
     font-size: 2.4rem;
+    @include for-laptop {
+      width: 100%;
+    }
   }
 }
 
@@ -63,11 +86,17 @@
     @include for-desktop {
       bottom: 30rem;
     }
+    @include for-laptop {
+      display: none;
+    }
   }
   &__text {
     width: 45%;
     font-size: 2.4rem;
     margin-bottom: 4rem;
+    @include for-laptop {
+      width: 100%;
+    }
   }
 
   &__btn {

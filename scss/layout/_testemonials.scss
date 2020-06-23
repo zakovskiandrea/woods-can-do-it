@@ -3,15 +3,28 @@
   flex-direction: column;
   background-color: #edf2f7;
   border-radius: 20px;
-  padding: 8.5rem;
+  padding: 8.5rem 0;
   align-items: center;
+
+  @include for-phone {
+    margin-right: 0;
+    margin-left: 0;
+    align-items: flex-start;
+    padding: 6rem 0;
+    border-radius: 0;
+  }
 }
 
 .teste {
   &__label {
+    padding: 0 6rem;
   }
 
   &__heading {
+    @include for-phone {
+      padding: 0 6rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &__text {
@@ -19,12 +32,22 @@
     color: #a0aec0;
     text-align: center;
     width: 50%;
+    @include for-phone {
+      padding: 0 6rem;
+      width: 100%;
+      text-align: unset;
+      margin-bottom: 4rem;
+    }
   }
 
   &__slider-box {
-    position: relative;
     width: 100%;
     overflow: hidden;
+    position: relative;
+    padding: 0 8.5rem;
+    @include for-phone {
+      padding: 0 6rem;
+    }
 
     .slider-btn {
       position: absolute;
@@ -32,11 +55,24 @@
       transform: translateY(-50%);
 
       &--prev {
-        left: 0;
+        left: 7rem;
+
+        @include for-desktop {
+          left: 4rem;
+        }
+        @include for-phone {
+          left: 1rem;
+        }
       }
 
       &--next {
-        right: 0;
+        right: 7rem;
+        @include for-desktop {
+          right: 4rem;
+        }
+        @include for-phone {
+          right: 1rem;
+        }
       }
     }
   }
@@ -56,15 +92,14 @@
     margin: 0 2.2rem;
     background-color: #f7fafc;
     border-radius: 20px;
+    @include for-laptop {
+      margin: 0 1rem;
+    }
   }
 }
 
 .slider-card {
   padding: 6.5rem;
-  @include for-desktop-xl {
-    padding: 4rem;
-  }
-
   @include for-desktop {
     padding: 3rem;
   }

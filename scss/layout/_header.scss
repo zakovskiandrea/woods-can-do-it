@@ -15,6 +15,14 @@
     background-color: #fff;
   }
 
+  &__logo-box {
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
+
   &__nav {
     flex: 1;
     display: flex;
