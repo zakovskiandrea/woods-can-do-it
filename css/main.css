@@ -175,6 +175,8 @@ body {
     color: #718096; }
   .header__link:hover, .header__link:active {
     color: #2d3748; }
+  .header__link--active:link, .header__link--active:visited, .header__link--active:hover, .header__link--active:active {
+    color: #2d3748; }
   .header__link--active-orange:link, .header__link--active-orange:visited, .header__link--active-orange:hover, .header__link--active-orange:active {
     color: #ffb74b; }
   .header__link--active-blue:link, .header__link--active-blue:visited, .header__link--active-blue:hover, .header__link--active-blue:active {
@@ -207,11 +209,14 @@ body {
     display: flex; }
   .footer__item {
     font-size: 1.5rem;
-    color: #718096;
     text-transform: uppercase;
     cursor: pointer; }
     .footer__item:not(:first-child) {
       margin-left: 7rem; }
+  .footer__link {
+    text-decoration: none; }
+    .footer__link:visited, .footer__link:hover, .footer__link:active {
+      color: #718096; }
 
 .section-testemonials {
   display: flex;
@@ -469,11 +474,14 @@ body {
     display: flex; }
   .footer__item {
     font-size: 1.5rem;
-    color: #718096;
     text-transform: uppercase;
     cursor: pointer; }
     .footer__item:not(:first-child) {
       margin-left: 7rem; }
+  .footer__link {
+    text-decoration: none; }
+    .footer__link:visited, .footer__link:hover, .footer__link:active {
+      color: #718096; }
 
 .section-main {
   margin-top: -15rem; }
@@ -722,3 +730,24 @@ body {
     margin-left: 1rem; }
   .social-card__link:hover, .social-card__link:active {
     text-decoration: underline; }
+
+.section-about-us {
+  display: flex;
+  padding: 10rem 0; }
+  .section-about-us__content {
+    flex: 1;
+    padding: 0 10rem; }
+  .section-about-us__label {
+    margin-bottom: 7rem; }
+  .section-about-us__heading {
+    margin-bottom: 7rem; }
+    .section-about-us__heading span {
+      color: #63b3ed; }
+  .section-about-us__text {
+    font-size: 2.4rem;
+    line-height: 1.5; }
+  .section-about-us__image-box {
+    flex: 1; }
+    .section-about-us__image-box img {
+      width: 100%;
+      height: auto; }

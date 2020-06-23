@@ -46,6 +46,15 @@
       color: #2d3748;
     }
 
+    &--active {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: #2d3748;
+      }
+    }
+
     &--active-orange {
       &:link,
       &:visited,

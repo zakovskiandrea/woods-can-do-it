@@ -16,12 +16,20 @@
 
   &__item {
     font-size: 1.5rem;
-    color: #718096;
     text-transform: uppercase;
     cursor: pointer;
 
     &:not(:first-child) {
       margin-left: 7rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    &:visited,
+    &:hover,
+    &:active {
+      color: #718096;
     }
   }
 }
