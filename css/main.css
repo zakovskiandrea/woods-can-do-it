@@ -1063,3 +1063,14 @@ body {
     .section-about-us__image-box img {
       width: 100%;
       height: auto; }
+
+.transition {
+  position: absolute;
+  z-index: 20;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: white;
+  transform: scaleY(0); }

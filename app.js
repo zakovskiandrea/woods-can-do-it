@@ -107,16 +107,16 @@ barba.init({
   ],
   transitions: [
     {
-      name: "opacity-transition",
-      leave(data) {
-        return gsap.to(data.current.container, {
-          opacity: 0,
-        });
+      async leave(data) {
+        const done = this.async();
+
+        pageTransition();
+        contentFadeOut();
+        await delay(1000);
+        done();
       },
-      enter(data) {
-        return gsap.from(data.next.container, {
-          opacity: 0,
-        });
+      async enter(data) {
+        contentFadeIn();
       },
     },
   ],
@@ -131,3 +131,52 @@ $(document).ready(() => {
     headerDropdown();
   });
 });
+
+function delay(n) {
+  n - n || 2000;
+
+  return new Promise((done) => {
+    setTimeout(() => {
+      done();
+    }, n);
+  });
+}
+
+function pageTransition() {
+  var tl = gsap.timeline();
+
+  tl.to(".transition", {
+    duration: 1,
+    scaleY: 1,
+    transformOrigin: "top",
+    ease: Power2.easeOut,
+  }).to(".transition", {
+    duration: 1,
+    scaleY: 0,
+    transformOrigin: "bottom",
+    ease: Power2.easeOut,
+  });
+}
+
+function contentFadeOut() {
+  var tl = gsap.timeline();
+
+  tl.to(".content", 1, {
+    opacity: 0,
+  });
+}
+
+function contentFadeIn() {
+  var tl = gsap.timeline();
+
+  tl.fromTo(
+    ".content",
+    1,
+    {
+      opacity: 0,
+    },
+    {
+      opacity: 1,
+    }
+  );
+}
