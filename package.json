@@ -20,6 +20,7 @@
     "node-sass": "^4.14.1"
   },
   "dependencies": {
+    "@barba/core": "^2.9.7",
     "jquery": "^3.5.1",
     "slick-carousel": "^1.8.1"
   }
