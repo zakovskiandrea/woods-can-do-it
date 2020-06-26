@@ -53,16 +53,26 @@ body {
   font-family: SF-light;
   display: inline-block; }
   .btn:link, .btn:visited {
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all 0.2s; }
   .btn--orange {
     color: #9c4221;
     background-color: #feebc8; }
+    .btn--orange:hover {
+      background: #ffa600;
+      color: #fff; }
   .btn--blue {
     color: #2c5282;
     background-color: #bee3f8; }
+    .btn--blue:hover {
+      color: #bee3f8;
+      background-color: #2c5282; }
   .btn--red {
     color: #c53030;
     background-color: #feb2b2; }
+    .btn--red:hover {
+      color: #feb2b2;
+      background-color: #c53030; }
 
 .slider-btn {
   width: 7rem;
@@ -72,7 +82,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.2s; }
+  .slider-btn:hover {
+    background-color: #bacfea; }
 
 body {
   font-family: SF-regular;
@@ -185,9 +198,10 @@ body {
     font-size: 1.6rem;
     font-family: SF-semibold;
     letter-spacing: 0.085em;
-    color: #718096; }
+    color: #718096;
+    transition: all 0.2s; }
   .header__link:hover, .header__link:active {
-    color: #2d3748; }
+    color: #515d6d; }
   .header__link--active:link, .header__link--active:visited, .header__link--active:hover, .header__link--active:active {
     color: #2d3748; }
   .header__link--active-orange:link, .header__link--active-orange:visited, .header__link--active-orange:hover, .header__link--active-orange:active {
@@ -299,8 +313,8 @@ body {
   .footer__link {
     color: #718096;
     text-decoration: none; }
-    .footer__link:visited, .footer__link:hover, .footer__link:active {
-      color: #718096; }
+    .footer__link:hover, .footer__link:active {
+      color: #515d6d; }
 
 .section-testemonials {
   display: flex;
@@ -669,8 +683,8 @@ body {
   .footer__link {
     color: #718096;
     text-decoration: none; }
-    .footer__link:visited, .footer__link:hover, .footer__link:active {
-      color: #718096; }
+    .footer__link:hover, .footer__link:active {
+      color: #515d6d; }
 
 .section-main {
   margin-top: -15rem; }

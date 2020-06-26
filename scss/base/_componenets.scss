@@ -8,21 +8,37 @@
   &:link,
   &:visited {
     text-decoration: none;
+    transition: all 0.2s;
   }
 
   &--orange {
     color: #9c4221;
     background-color: #feebc8;
+
+    &:hover {
+      background: #ffa600;
+      color: #fff;
+    }
   }
 
   &--blue {
     color: #2c5282;
     background-color: #bee3f8;
+
+    &:hover {
+      color: #bee3f8;
+      background-color: #2c5282;
+    }
   }
 
   &--red {
     color: #c53030;
     background-color: #feb2b2;
+
+    &:hover {
+      color: #feb2b2;
+      background-color: #c53030;
+    }
   }
 }
 
@@ -35,4 +51,9 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #bacfea;
+  }
 }

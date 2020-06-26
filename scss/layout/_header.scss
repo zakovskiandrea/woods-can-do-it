@@ -55,11 +55,12 @@
       font-family: SF-semibold;
       letter-spacing: 0.085em;
       color: #718096;
+      transition: all 0.2s;
     }
 
     &:hover,
     &:active {
-      color: #2d3748;
+      color: #515d6d;
     }
 
     &--active {

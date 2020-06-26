@@ -47,7 +47,6 @@ const setSliderGallery = () => {
 
 const headerDropdown = () => {
   $(".header-phone__dropbtn").click((e) => {
-    $(".header-phone__dropdown-content").removeClass("show");
     $(".header-phone__dropdown-content").toggleClass("show");
     e.stopPropagation();
   });
@@ -117,6 +116,7 @@ barba.init({
       },
       async enter(data) {
         contentFadeIn();
+        imageAnimation();
       },
     },
   ],
@@ -179,4 +179,12 @@ function contentFadeIn() {
       opacity: 1,
     }
   );
+}
+
+function imageAnimation() {
+  var tl = gsap.timeline();
+  tl.from(".description__image", 1, {
+    bottom: "2rem",
+    ease: Power2.easeOut,
+  });
 }
